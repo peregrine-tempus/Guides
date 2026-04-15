@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+    <linearGradient id="fabric" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6B4990"/>
+      <stop offset="100%" stop-color="#4A3265"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="720" fill="#FAFAFA"/>
+
+  <text x="600" y="40" text-anchor="middle" font-size="24" font-weight="700" fill="#222">EDW in Microsoft Fabric — Target State</text>
+  <text x="600" y="66" text-anchor="middle" font-size="14" fill="#666">Gold (Star Schema) and Platinum (OLAP) hosted in Fabric; Power BI connects natively</text>
+
+  <text x="90" y="110" font-size="13" font-weight="700" fill="#888">SOURCES</text>
+  <line x1="80" y1="120" x2="200" y2="120" stroke="#CCC" stroke-width="1"/>
+
+  <g>
+    <rect x="60" y="150" width="160" height="50" rx="6" fill="#FFF" stroke="#999" stroke-width="1.5"/>
+    <text x="140" y="180" text-anchor="middle" font-size="13" fill="#333">Line-of-Business DBs</text>
+  </g>
+  <g>
+    <rect x="60" y="220" width="160" height="50" rx="6" fill="#FFF" stroke="#999" stroke-width="1.5"/>
+    <text x="140" y="250" text-anchor="middle" font-size="13" fill="#333">Flat Files / APIs</text>
+  </g>
+  <g>
+    <rect x="60" y="290" width="160" height="50" rx="6" fill="#FFF" stroke="#999" stroke-width="1.5"/>
+    <text x="140" y="320" text-anchor="middle" font-size="13" fill="#333">SaaS / 3rd-Party</text>
+  </g>
+
+  <line x1="220" y1="175" x2="290" y2="245" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="220" y1="245" x2="290" y2="245" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="220" y1="315" x2="290" y2="245" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="300" y="110" width="640" height="460" rx="14" fill="url(#fabric)" opacity="0.08" stroke="#6B4990" stroke-width="2" stroke-dasharray="6,4"/>
+    <text x="620" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#6B4990">Microsoft Fabric</text>
+  </g>
+
+  <g>
+    <rect x="330" y="170" width="180" height="150" rx="10" fill="#FFF" stroke="#6B4990" stroke-width="2"/>
+    <text x="420" y="200" text-anchor="middle" font-size="14" font-weight="700" fill="#6B4990">Ingestion</text>
+    <text x="420" y="225" text-anchor="middle" font-size="11" fill="#555">Data Factory</text>
+    <text x="420" y="243" text-anchor="middle" font-size="11" fill="#555">Dataflows Gen2</text>
+    <text x="420" y="275" text-anchor="middle" font-size="11" font-style="italic" fill="#888">Bronze</text>
+    <text x="420" y="295" text-anchor="middle" font-size="11" font-style="italic" fill="#888">Silver</text>
+  </g>
+
+  <line x1="510" y1="245" x2="565" y2="245" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="570" y="170" width="180" height="150" rx="10" fill="#FFF" stroke="#4C9E45" stroke-width="2.5"/>
+    <text x="660" y="200" text-anchor="middle" font-size="14" font-weight="700" fill="#4C9E45">Gold</text>
+    <text x="660" y="220" text-anchor="middle" font-size="11" fill="#555">Fabric Warehouse</text>
+    <text x="660" y="238" text-anchor="middle" font-size="11" fill="#555">(Star Schema)</text>
+
+    <g stroke="#4C9E45" stroke-width="1.3" fill="none">
+      <circle cx="660" cy="275" r="7" fill="#4C9E45"/>
+      <line x1="660" y1="282" x2="660" y2="300"/>
+      <line x1="660" y1="275" x2="642" y2="275"/>
+      <line x1="660" y1="275" x2="678" y2="275"/>
+      <line x1="660" y1="268" x2="660" y2="255"/>
+      <circle cx="660" cy="250" r="3" fill="#4C9E45"/>
+      <circle cx="637" cy="275" r="3" fill="#4C9E45"/>
+      <circle cx="683" cy="275" r="3" fill="#4C9E45"/>
+      <circle cx="660" cy="305" r="3" fill="#4C9E45"/>
+    </g>
+  </g>
+
+  <line x1="750" y1="245" x2="805" y2="245" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="810" y="170" width="110" height="150" rx="10" fill="#FFF" stroke="#F68D2D" stroke-width="2.5"/>
+    <text x="865" y="200" text-anchor="middle" font-size="14" font-weight="700" fill="#F68D2D">Platinum</text>
+    <text x="865" y="218" text-anchor="middle" font-size="10" fill="#555">Semantic Model</text>
+    <text x="865" y="232" text-anchor="middle" font-size="10" fill="#555">(Direct Lake)</text>
+
+    <g stroke="#F68D2D" stroke-width="1.2" fill="#FFF">
+      <polygon points="865,250 895,260 895,295 865,305 835,295 835,260" />
+      <line x1="835" y1="260" x2="865" y2="270" stroke="#F68D2D"/>
+      <line x1="895" y1="260" x2="865" y2="270" stroke="#F68D2D"/>
+      <line x1="865" y1="270" x2="865" y2="305" stroke="#F68D2D"/>
+    </g>
+  </g>
+
+  <text x="350" y="355" font-size="11" font-style="italic" fill="#6B4990">OneLake (unified storage — everything lands here)</text>
+  <rect x="330" y="360" width="590" height="30" rx="6" fill="#6B4990" opacity="0.15" stroke="#6B4990" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="625" y="380" text-anchor="middle" font-size="12" font-weight="600" fill="#6B4990">OneLake — Delta Parquet, single copy, governed</text>
+
+  <g>
+    <rect x="330" y="420" width="280" height="130" rx="10" fill="#FFF" stroke="#999" stroke-width="1.5"/>
+    <text x="470" y="445" text-anchor="middle" font-size="13" font-weight="700" fill="#444">Governance &amp; Security</text>
+    <text x="470" y="468" text-anchor="middle" font-size="11" fill="#666">Microsoft Purview</text>
+    <text x="470" y="485" text-anchor="middle" font-size="11" fill="#666">Row-level / Object-level security</text>
+    <text x="470" y="502" text-anchor="middle" font-size="11" fill="#666">Entra ID authentication</text>
+    <text x="470" y="519" text-anchor="middle" font-size="11" fill="#666">Data lineage &amp; classification</text>
+  </g>
+
+  <g>
+    <rect x="640" y="420" width="280" height="130" rx="10" fill="#FFF" stroke="#999" stroke-width="1.5"/>
+    <text x="780" y="445" text-anchor="middle" font-size="13" font-weight="700" fill="#444">Monitoring &amp; Ops</text>
+    <text x="780" y="468" text-anchor="middle" font-size="11" fill="#666">Fabric Capacity Metrics</text>
+    <text x="780" y="485" text-anchor="middle" font-size="11" fill="#666">Workspace monitoring</text>
+    <text x="780" y="502" text-anchor="middle" font-size="11" fill="#666">Refresh history &amp; alerts</text>
+    <text x="780" y="519" text-anchor="middle" font-size="11" fill="#666">CI/CD via Fabric Git integration</text>
+  </g>
+
+  <text x="1050" y="110" text-anchor="middle" font-size="13" font-weight="700" fill="#888">CONSUMERS</text>
+  <line x1="980" y1="120" x2="1140" y2="120" stroke="#CCC" stroke-width="1"/>
+
+  <line x1="920" y1="245" x2="985" y2="200" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="920" y1="245" x2="985" y2="265" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="920" y1="245" x2="985" y2="330" stroke="#333" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="990" y="175" width="160" height="55" rx="8" fill="#FFF" stroke="#F2C811" stroke-width="2"/>
+    <text x="1070" y="200" text-anchor="middle" font-size="13" font-weight="700" fill="#B8960C">Power BI</text>
+    <text x="1070" y="218" text-anchor="middle" font-size="10" fill="#666">Reports &amp; Dashboards</text>
+  </g>
+  <g>
+    <rect x="990" y="240" width="160" height="55" rx="8" fill="#FFF" stroke="#999" stroke-width="1.5"/>
+    <text x="1070" y="265" text-anchor="middle" font-size="13" font-weight="700" fill="#444">Excel</text>
+    <text x="1070" y="283" text-anchor="middle" font-size="10" fill="#666">Analyze in Excel</text>
+  </g>
+  <g>
+    <rect x="990" y="305" width="160" height="55" rx="8" fill="#FFF" stroke="#999" stroke-width="1.5"/>
+    <text x="1070" y="330" text-anchor="middle" font-size="13" font-weight="700" fill="#444">SQL / DAX Clients</text>
+    <text x="1070" y="348" text-anchor="middle" font-size="10" fill="#666">Ad-hoc analysis</text>
+  </g>
+
+  <text x="600" y="625" text-anchor="middle" font-size="12" fill="#555">Single copy of data in OneLake. Gold and Platinum live side-by-side in the same governed workspace.</text>
+  <text x="600" y="645" text-anchor="middle" font-size="12" fill="#555">Power BI uses Direct Lake mode — no import, no caching lag, no duplicate storage.</text>
+
+  <rect x="330" y="670" width="18" height="14" fill="#FFF" stroke="#4C9E45" stroke-width="2"/>
+  <text x="355" y="682" font-size="11" fill="#555">Gold layer (Star Schema)</text>
+  <rect x="500" y="670" width="18" height="14" fill="#FFF" stroke="#F68D2D" stroke-width="2"/>
+  <text x="525" y="682" font-size="11" fill="#555">Platinum layer (Semantic Model / OLAP)</text>
+  <rect x="735" y="670" width="18" height="14" fill="#FFF" stroke="#6B4990" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="760" y="682" font-size="11" fill="#555">Microsoft Fabric boundary</text>
+</svg>

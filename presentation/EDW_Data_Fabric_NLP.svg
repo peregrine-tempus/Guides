@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+    <marker id="arrow2red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#E32526"/>
+    </marker>
+  </defs>
+
+  <rect width="1200" height="780" fill="#FAFAFA"/>
+
+  <text x="600" y="40" text-anchor="middle" font-size="24" font-weight="700" fill="#222">EDW in Microsoft Fabric — Natural-Language Q&amp;A</text>
+  <text x="600" y="66" text-anchor="middle" font-size="14" fill="#666">Native path: Fabric Data Agents + Azure OpenAI, grounded in the Platinum semantic model</text>
+
+  <text x="90" y="110" font-size="13" font-weight="700" fill="#888">SOURCES</text>
+  <line x1="80" y1="120" x2="200" y2="120" stroke="#CCC" stroke-width="1"/>
+
+  <g>
+    <rect x="60" y="150" width="160" height="50" rx="6" fill="#FFF" stroke="#999" stroke-width="1.5"/>
+    <text x="140" y="180" text-anchor="middle" font-size="13" fill="#333">Line-of-Business DBs</text>
+  </g>
+  <g>
+    <rect x="60" y="220" width="160" height="50" rx="6" fill="#FFF" stroke="#999" stroke-width="1.5"/>
+    <text x="140" y="250" text-anchor="middle" font-size="13" fill="#333">Flat Files / APIs</text>
+  </g>
+  <g>
+    <rect x="60" y="290" width="160" height="50" rx="6" fill="#FFF" stroke="#999" stroke-width="1.5"/>
+    <text x="140" y="320" text-anchor="middle" font-size="13" fill="#333">SaaS / 3rd-Party</text>
+  </g>
+
+  <line x1="220" y1="175" x2="290" y2="245" stroke="#666" stroke-width="1.5" marker-end="url(#arrow2)"/>
+  <line x1="220" y1="245" x2="290" y2="245" stroke="#666" stroke-width="1.5" marker-end="url(#arrow2)"/>
+  <line x1="220" y1="315" x2="290" y2="245" stroke="#666" stroke-width="1.5" marker-end="url(#arrow2)"/>
+
+  <g>
+    <rect x="300" y="110" width="640" height="460" rx="14" fill="#6B4990" fill-opacity="0.07" stroke="#6B4990" stroke-width="2" stroke-dasharray="6,4"/>
+    <text x="620" y="138" text-anchor="middle" font-size="16" font-weight="700" fill="#6B4990">Microsoft Fabric</text>
+  </g>
+
+  <g>
+    <rect x="330" y="170" width="160" height="140" rx="10" fill="#FFF" stroke="#6B4990" stroke-width="2"/>
+    <text x="410" y="198" text-anchor="middle" font-size="13" font-weight="700" fill="#6B4990">Ingestion</text>
+    <text x="410" y="222" text-anchor="middle" font-size="11" fill="#555">Data Factory</text>
+    <text x="410" y="240" text-anchor="middle" font-size="11" fill="#555">Dataflows Gen2</text>
+    <text x="410" y="272" text-anchor="middle" font-size="11" font-style="italic" fill="#888">Bronze</text>
+    <text x="410" y="290" text-anchor="middle" font-size="11" font-style="italic" fill="#888">Silver</text>
+  </g>
+
+  <line x1="490" y1="240" x2="545" y2="240" stroke="#333" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <g>
+    <rect x="550" y="170" width="170" height="140" rx="10" fill="#FFF" stroke="#4C9E45" stroke-width="2.5"/>
+    <text x="635" y="198" text-anchor="middle" font-size="13" font-weight="700" fill="#4C9E45">Gold</text>
+    <text x="635" y="218" text-anchor="middle" font-size="10" fill="#555">Fabric Warehouse</text>
+    <text x="635" y="232" text-anchor="middle" font-size="10" fill="#555">(Star Schema)</text>
+
+    <g stroke="#4C9E45" stroke-width="1.3" fill="none">
+      <circle cx="635" cy="268" r="7" fill="#4C9E45"/>
+      <line x1="635" y1="275" x2="635" y2="293"/>
+      <line x1="635" y1="268" x2="617" y2="268"/>
+      <line x1="635" y1="268" x2="653" y2="268"/>
+      <line x1="635" y1="261" x2="635" y2="248"/>
+      <circle cx="635" cy="243" r="3" fill="#4C9E45"/>
+      <circle cx="612" cy="268" r="3" fill="#4C9E45"/>
+      <circle cx="658" cy="268" r="3" fill="#4C9E45"/>
+      <circle cx="635" cy="298" r="3" fill="#4C9E45"/>
+    </g>
+  </g>
+
+  <line x1="720" y1="240" x2="775" y2="240" stroke="#333" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <g>
+    <rect x="780" y="170" width="130" height="140" rx="10" fill="#FFF" stroke="#F68D2D" stroke-width="2.5"/>
+    <text x="845" y="198" text-anchor="middle" font-size="13" font-weight="700" fill="#F68D2D">Platinum</text>
+    <text x="845" y="216" text-anchor="middle" font-size="10" fill="#555">Semantic Model</text>
+    <text x="845" y="230" text-anchor="middle" font-size="10" fill="#555">(Direct Lake)</text>
+
+    <g stroke="#F68D2D" stroke-width="1.2" fill="#FFF">
+      <polygon points="845,250 875,260 875,295 845,305 815,295 815,260"/>
+      <line x1="815" y1="260" x2="845" y2="270" stroke="#F68D2D"/>
+      <line x1="875" y1="260" x2="845" y2="270" stroke="#F68D2D"/>
+      <line x1="845" y1="270" x2="845" y2="305" stroke="#F68D2D"/>
+    </g>
+  </g>
+
+  <rect x="330" y="340" width="580" height="30" rx="6" fill="#6B4990" fill-opacity="0.15" stroke="#6B4990" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="620" y="360" text-anchor="middle" font-size="12" font-weight="600" fill="#6B4990">OneLake — single governed copy of data</text>
+
+  <g>
+    <rect x="330" y="395" width="580" height="160" rx="12" fill="#FFF" stroke="#E32526" stroke-width="2.5"/>
+    <text x="620" y="422" text-anchor="middle" font-size="14" font-weight="700" fill="#E32526">Fabric Data Agent</text>
+    <text x="620" y="440" text-anchor="middle" font-size="11" fill="#777">Grounded on Platinum semantic model — NL understanding, query generation, answer synthesis</text>
+
+    <g>
+      <rect x="350" y="455" width="155" height="85" rx="8" fill="#FFF" stroke="#E32526" stroke-width="1.5"/>
+      <text x="427" y="478" text-anchor="middle" font-size="11" font-weight="700" fill="#E32526">Azure OpenAI</text>
+      <text x="427" y="496" text-anchor="middle" font-size="10" fill="#555">GPT-4o / GPT-4.1</text>
+      <text x="427" y="512" text-anchor="middle" font-size="10" fill="#555">NL → DAX / SQL</text>
+      <text x="427" y="528" text-anchor="middle" font-size="10" fill="#555">Answer synthesis</text>
+    </g>
+
+    <g>
+      <rect x="515" y="455" width="155" height="85" rx="8" fill="#FFF" stroke="#E32526" stroke-width="1.5"/>
+      <text x="592" y="478" text-anchor="middle" font-size="11" font-weight="700" fill="#E32526">Grounding Layer</text>
+      <text x="592" y="496" text-anchor="middle" font-size="10" fill="#555">Semantic model</text>
+      <text x="592" y="512" text-anchor="middle" font-size="10" fill="#555">Measures &amp; relationships</text>
+      <text x="592" y="528" text-anchor="middle" font-size="10" fill="#555">Business glossary</text>
+    </g>
+
+    <g>
+      <rect x="680" y="455" width="215" height="85" rx="8" fill="#FFF" stroke="#E32526" stroke-width="1.5"/>
+      <text x="787" y="478" text-anchor="middle" font-size="11" font-weight="700" fill="#E32526">Safety &amp; Governance</text>
+      <text x="787" y="496" text-anchor="middle" font-size="10" fill="#555">Entra ID + RLS/OLS inherited from Platinum</text>
+      <text x="787" y="512" text-anchor="middle" font-size="10" fill="#555">Purview audit &amp; lineage</text>
+      <text x="787" y="528" text-anchor="middle" font-size="10" fill="#555">Prompt shields, content filtering</text>
+    </g>
+  </g>
+
+  <path d="M 845 310 L 845 330 L 620 330 L 620 395" stroke="#E32526" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrow2red)"/>
+  <text x="680" y="325" font-size="10" font-style="italic" fill="#E32526">agent queries Platinum</text>
+
+  <text x="1050" y="110" text-anchor="middle" font-size="13" font-weight="700" fill="#888">CONSUMERS</text>
+  <line x1="970" y1="120" x2="1140" y2="120" stroke="#CCC" stroke-width="1"/>
+
+  <g>
+    <rect x="970" y="150" width="190" height="70" rx="10" fill="#FFF" stroke="#F2C811" stroke-width="2"/>
+    <text x="1065" y="176" text-anchor="middle" font-size="13" font-weight="700" fill="#B8960C">Power BI</text>
+    <text x="1065" y="194" text-anchor="middle" font-size="10" fill="#666">Reports + Copilot chat</text>
+    <text x="1065" y="210" text-anchor="middle" font-size="10" fill="#666">pane on any dashboard</text>
+  </g>
+  <g>
+    <rect x="970" y="235" width="190" height="70" rx="10" fill="#FFF" stroke="#6264A7" stroke-width="2"/>
+    <text x="1065" y="261" text-anchor="middle" font-size="13" font-weight="700" fill="#4B4D91">Microsoft Teams</text>
+    <text x="1065" y="279" text-anchor="middle" font-size="10" fill="#666">Data Agent as a Teams</text>
+    <text x="1065" y="295" text-anchor="middle" font-size="10" fill="#666">bot — ask in a channel</text>
+  </g>
+  <g>
+    <rect x="970" y="320" width="190" height="70" rx="10" fill="#FFF" stroke="#0078D4" stroke-width="2"/>
+    <text x="1065" y="346" text-anchor="middle" font-size="13" font-weight="700" fill="#0078D4">Copilot Studio</text>
+    <text x="1065" y="364" text-anchor="middle" font-size="10" fill="#666">Custom agent hosted</text>
+    <text x="1065" y="380" text-anchor="middle" font-size="10" fill="#666">on intranet / SharePoint</text>
+  </g>
+  <g>
+    <rect x="970" y="405" width="190" height="70" rx="10" fill="#FFF" stroke="#999" stroke-width="1.5"/>
+    <text x="1065" y="431" text-anchor="middle" font-size="13" font-weight="700" fill="#444">Direct REST API</text>
+    <text x="1065" y="449" text-anchor="middle" font-size="10" fill="#666">Fabric Data Agent HTTP</text>
+    <text x="1065" y="465" text-anchor="middle" font-size="10" fill="#666">endpoint — any app</text>
+  </g>
+
+  <line x1="910" y1="475" x2="965" y2="185" stroke="#E32526" stroke-width="2" fill="none" marker-end="url(#arrow2red)"/>
+  <line x1="910" y1="475" x2="965" y2="270" stroke="#E32526" stroke-width="2" fill="none" marker-end="url(#arrow2red)"/>
+  <line x1="910" y1="475" x2="965" y2="355" stroke="#E32526" stroke-width="2" fill="none" marker-end="url(#arrow2red)"/>
+  <line x1="910" y1="475" x2="965" y2="440" stroke="#E32526" stroke-width="2" fill="none" marker-end="url(#arrow2red)"/>
+
+  <g>
+    <rect x="60" y="395" width="200" height="160" rx="10" fill="#FFF" stroke="#999" stroke-width="1.5" stroke-dasharray="4,3"/>
+    <text x="160" y="420" text-anchor="middle" font-size="12" font-weight="700" fill="#666">Business User</text>
+    <text x="160" y="445" text-anchor="middle" font-size="10" fill="#777">"What were our top 5</text>
+    <text x="160" y="460" text-anchor="middle" font-size="10" fill="#777">product categories by</text>
+    <text x="160" y="475" text-anchor="middle" font-size="10" fill="#777">revenue last quarter?"</text>
+    <line x1="80" y1="490" x2="240" y2="490" stroke="#DDD" stroke-width="1"/>
+    <text x="160" y="508" text-anchor="middle" font-size="10" font-style="italic" fill="#555">Asks in natural language</text>
+    <text x="160" y="523" text-anchor="middle" font-size="10" font-style="italic" fill="#555">via Teams, Power BI, or</text>
+    <text x="160" y="538" text-anchor="middle" font-size="10" font-style="italic" fill="#555">a chat UI of their choice</text>
+  </g>
+
+  <path d="M 260 475 Q 300 475 300 475" stroke="#E32526" stroke-width="0" fill="none"/>
+  <path d="M 165 395 Q 165 380 300 380 L 1065 380 L 1065 390" stroke="#E32526" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.5"/>
+  <text x="600" y="375" text-anchor="middle" font-size="10" font-style="italic" fill="#999">user reaches any consumer surface</text>
+
+  <g>
+    <rect x="60" y="590" width="1080" height="110" rx="10" fill="#FFF" stroke="#4C9E45" stroke-width="2"/>
+    <text x="600" y="615" text-anchor="middle" font-size="13" font-weight="700" fill="#4C9E45">Why this beats our local POC</text>
+    <text x="80" y="640" font-size="11" fill="#444">•  <tspan font-weight="700">Grounded, not guessing.</tspan>  Agent reads the Platinum semantic model — measures, relationships, business glossary — so it uses the same definitions as reports.</text>
+    <text x="80" y="660" font-size="11" fill="#444">•  <tspan font-weight="700">Security inherited.</tspan>  Row-level and object-level security from Platinum flow through automatically. Users only see data they are already allowed to see.</text>
+    <text x="80" y="680" font-size="11" fill="#444">•  <tspan font-weight="700">No infrastructure.</tspan>  No Ollama, no GPUs, no VRAM pressure, no prompt engineering. Azure OpenAI runs at cloud scale; latency measured in seconds, not minutes.</text>
+  </g>
+
+  <rect x="200" y="730" width="18" height="14" fill="#FFF" stroke="#4C9E45" stroke-width="2"/>
+  <text x="225" y="742" font-size="11" fill="#555">Gold</text>
+  <rect x="280" y="730" width="18" height="14" fill="#FFF" stroke="#F68D2D" stroke-width="2"/>
+  <text x="305" y="742" font-size="11" fill="#555">Platinum</text>
+  <rect x="375" y="730" width="18" height="14" fill="#FFF" stroke="#E32526" stroke-width="2"/>
+  <text x="400" y="742" font-size="11" fill="#555">NLP / AI layer</text>
+  <rect x="495" y="730" width="18" height="14" fill="#FFF" stroke="#6B4990" stroke-width="2" stroke-dasharray="3,2"/>
+  <text x="520" y="742" font-size="11" fill="#555">Fabric boundary</text>
+</svg>
